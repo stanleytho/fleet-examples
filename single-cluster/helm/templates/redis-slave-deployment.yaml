@@ -19,8 +19,8 @@ spec:
     spec:
       containers:
       - name: slave
-        # image: gcr.io/google_samples/gb-redisslave:v1
-        image: fakeimage
+        image: gcr.io/google_samples/gb-redisslave:v1
+        # image: fakeimage
         resources:
           requests:
             cpu: 100m
