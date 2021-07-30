@@ -1,8 +1,7 @@
 targetCustomizations:
 - name: mksmith
   helm:
-    chart: nginx-stable/nginx-ingress
-    repo: https://helm.nginx.com/stable
+    chart: stable/mysql
     # values:
     #   controller:
     #     image:
