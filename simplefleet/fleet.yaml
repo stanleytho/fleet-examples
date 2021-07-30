@@ -1,7 +1,8 @@
 targetCustomizations:
 - name: mksmith
   helm:
-    chart: stable/mysql
+    repo: https://charts.bitnami.com/bitnami
+    chart: bitnami/mysql
     # values:
     #   controller:
     #     image:
