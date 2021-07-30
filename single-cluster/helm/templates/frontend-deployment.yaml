@@ -8,6 +8,8 @@ spec:
       app: guestbook
       tier: frontend
   replicas: {{ .Values.replicas }}
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
@@ -17,6 +19,7 @@ spec:
       containers:
       - name: php-redis
         image: gcr.io/google-samples/gb-frontend:v4
+        # image: fakeimage
         resources:
           requests:
             cpu: 100m
