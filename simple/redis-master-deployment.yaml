@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: master
-        image: fakeredis
+        image: redis
         resources:
           requests:
             cpu: 100m
