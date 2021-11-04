@@ -9,6 +9,8 @@ spec:
       role: slave
       tier: backend
   replicas: 2
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
